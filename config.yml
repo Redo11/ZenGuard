@@ -1,9 +1,37 @@
+#    _____ ____  _   _ ______ _____ _____
+#   / ____/ __ \| \ | |  ____|_   _/ ____|
+#  | |   | |  | |  \| | |__    | || |  __
+#  | |   | |  | | . ` |  __|   | || | |_ |
+#  | |___| |__| | |\  | |     _| || |__| |
+#   \_____\____/|_| \_|_|    |_____\_____|
+general:
+  permission: zenguard.cmd
+messages:
+  no-permission: "&cYou don't have permission to perform this command!"
+  blocked-cmd: "&cThis command is blocked!"
+  gui-name: "ZenGuard Protection Menu"
+
+#  __  __  ____  _____  _    _ _      ______  _____
+#  |  \/  |/ __ \|  __ \| |  | | |    |  ____|/ ____|
+#  | \  / | |  | | |  | | |  | | |    | |__  | (___
+#  | |\/| | |  | | |  | | |  | | |    |  __|  \___ \
+#  | |  | | |__| | |__| | |__| | |____| |____ ____) |
+#  |_|  |_|\____/|_____/ \____/|______|______|_____/
 op-protection:
   enabled: true
-  broadcast:
-    - "Line 1"
-    - "Line 2"
+  broadcast: "&8[&3ZenGuard&8] &7Player &3%player% &7has been banned, due to Security Alert (OP-Protection)"
+  #Command executed after op-protection module triggered
   command: "ban %player% &8[&3ZenGuard&8] &7Account Security Alert"
+  #List of trusted users, with OP
   list:
     - "PolskiStevek"
-    - "Rufflez"
+
+#  __  __ _____  _____  _____
+#  |  \/  |_   _|/ ____|/ ____|
+#  | \  / | | | | (___ | |
+#  | |\/| | | |  \___ \| |
+#  | |  | |_| |_ ____) | |____
+#  |_|  |_|_____|_____/ \_____|
+#Stats displayed in GUI
+stats:
+  op-protection: 0

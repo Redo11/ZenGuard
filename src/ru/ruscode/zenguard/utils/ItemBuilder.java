@@ -38,12 +38,6 @@ public class ItemBuilder
         this.amount = amount;
         this.data = data;
     }
-
-    public ItemBuilder setType(final Material mat) {
-        this.mat = mat;
-        return this;
-    }
-
     public ItemBuilder setTitle(final String title) {
         this.title = title;
         return this;
@@ -127,65 +121,5 @@ public class ItemBuilder
         return newBuilder;
     }
 
-    public Material getType() {
-        return this.mat;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public List<String> getLore() {
-        return this.lore;
-    }
-
-    public Color getColor() {
-        return this.color;
-    }
-
-    public boolean hasEnchantment(final Enchantment enchant) {
-        return this.enchants.containsKey(enchant);
-    }
-
-    public int getEnchantmentLevel(final Enchantment enchant) {
-        return this.enchants.get(enchant);
-    }
-
-    public HashMap<Enchantment, Integer> getAllEnchantments() {
-        return this.enchants;
-    }
-
-    public boolean isItem(final ItemStack item) {
-        return this.isItem(item, false);
-    }
-
-    public boolean isItem(final ItemStack item, final boolean strictDataMatch) {
-        final ItemMeta meta = item.getItemMeta();
-        if (item.getType() != this.getType()) {
-            return false;
-        }
-        if (!meta.hasDisplayName() && this.getTitle() != null) {
-            return false;
-        }
-        if (!meta.getDisplayName().equals(this.getTitle())) {
-            return false;
-        }
-        if (!meta.hasLore() && !this.getLore().isEmpty()) {
-            return false;
-        }
-        if (meta.hasLore()) {
-            for (final String lore : meta.getLore()) {
-                if (!this.getLore().contains(lore)) {
-                    return false;
-                }
-            }
-        }
-        for (final Enchantment enchant : item.getEnchantments().keySet()) {
-            if (!this.hasEnchantment(enchant)) {
-                return false;
-            }
-        }
-        return true;
-    }
 }
 
