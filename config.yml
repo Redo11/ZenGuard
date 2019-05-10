@@ -1,0 +1,8 @@
+op-protection:
+  enabled: true
+  broadcast:
+    - "Line 1"
+    - "Line 2"
+  command: "ban %player% &8[&3ZenGuard&8] &7Account Security Alert"
+  list:
+    - "PolskiStevek"
