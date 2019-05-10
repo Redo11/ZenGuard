@@ -12,7 +12,7 @@ public class ZenGuardCommand implements CommandExecutor {
         Player p = (Player) sender;
         if (args.length < 1){
             p.sendMessage(" ");
-            p.sendMessage(ChatUtil.fix("&4ZenGuard Protection &8[&7(&fVersion: 1.0&7)&8, &7(&fAuthor: PolskiStevek&7)&8]"));
+            p.sendMessage(ChatUtil.fix("&4ZenGuard Protection &8[&7(&fVersion: 1.0&7)&8, &7(&fAuthor: PolskiStevek &fProgramista: h69_&7)&8]"));
             p.sendMessage(" ");
             p.sendMessage("&6/zenguard menu");
         }

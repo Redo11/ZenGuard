@@ -6,3 +6,4 @@ op-protection:
   command: "ban %player% &8[&3ZenGuard&8] &7Account Security Alert"
   list:
     - "PolskiStevek"
+    - "Rufflez"

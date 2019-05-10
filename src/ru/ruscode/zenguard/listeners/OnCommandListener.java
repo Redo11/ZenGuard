@@ -21,6 +21,11 @@ public class OnCommandListener implements Listener {
                     ChatUtil.broadcast(FileConfiguration.createPath(Main.getInstance().getConfig(), "op-protection.broadcast"));
                 }
             }
+            final String cmd = e.getMessage().toLowerCase().split( " ")[0];
+                if (cmd.equalsIgnoreCase("//")) {
+                    e.setCancelled(true);
+                    e.getPlayer().sendMessage(ChatUtil.fix("&8[&3ZenGuard&8] &cThis command is blocked."));
+                }
+            }
         }
     }
-}
