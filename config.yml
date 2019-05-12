@@ -6,10 +6,16 @@
 #   \_____\____/|_| \_|_|    |_____\_____|
 general:
   permission: zenguard.cmd
+  date-format: HH:mm:ss
 messages:
   no-permission: "&cYou don't have permission to perform this command!"
   blocked-cmd: "&cThis command is blocked!"
   gui-name: "ZenGuard Protection Menu"
+gui:
+  actions:
+    name: "&cExecuted Actions"
+  status:
+    name: "&6Server Status"
 
 #  __  __  ____  _____  _    _ _      ______  _____
 #  |  \/  |/ __ \|  __ \| |  | | |    |  ____|/ ____|
@@ -25,6 +31,20 @@ op-protection:
   #List of trusted users, with OP
   list:
     - "PolskiStevek"
+player-log:
+  enabled: true
+  #Log commands and more
+  event-log: true
+  save-ip: true
+  #Commands not logged in player-log
+  exclude-commands:
+    - /execute
+    - /test
+  log-messages:
+    join: "Joined the server."
+    quit: "Left the server."
+    command: "Issued command: %cmd%."
+    chat: "Send message: %msg%."
 
 #  __  __ _____  _____  _____
 #  |  \/  |_   _|/ ____|/ ____|
