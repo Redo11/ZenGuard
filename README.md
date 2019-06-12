@@ -15,4 +15,4 @@ Better Server Protection.
 
 ![Alt Text](https://i.imgur.com/M4qeVK9.png)
 
-[Imgur](https://imgur.com/rwThoAS)
+![Alt Text](https://imgur.com/rwThoAS)
