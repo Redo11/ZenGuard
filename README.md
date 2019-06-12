@@ -1,7 +1,7 @@
-## ZenGuard
+# ZenGuard
 Better Server Protection.
 
-# Features
+## Features
 * OP-Protection. No more backdoors!
 * Protected-Commands. Blacklist grief commands, (eg. /ban Owner)
 * No Depencies
