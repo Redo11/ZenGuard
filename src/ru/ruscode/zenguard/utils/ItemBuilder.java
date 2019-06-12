@@ -69,19 +69,6 @@ public class ItemBuilder
         return this;
     }
 
-    public ItemBuilder setPotion(final Potion potion) {
-        if (this.mat != Material.POTION) {
-            this.mat = Material.POTION;
-        }
-        this.potion = potion;
-        return this;
-    }
-
-    public ItemBuilder setAmount(final int amount) {
-        this.amount = amount;
-        return this;
-    }
-
     public ItemStack build() {
         Material mat = this.mat;
         if (mat == null) {

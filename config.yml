@@ -7,15 +7,23 @@
 general:
   permission: zenguard.cmd
   date-format: HH:mm:ss
+  #Message when someone join (messages: join-message)
+  join-message: true
 messages:
   no-permission: "&cYou don't have permission to perform this command!"
   blocked-cmd: "&cThis command is blocked!"
   gui-name: "ZenGuard Protection Menu"
+  join-message: "&8[&3ZenGuard&8] &7This server is protected &3ZenGuard v%ver% &7by &3xThunderek"
+  reload: "&8[&3ZenGuard&8] &7Config reloaded!"
+  unknown-cmd: "&8[&3ZenGuard&8] &7Unknown command! Check &3/zenguard"
 gui:
   actions:
     name: "&cExecuted Actions"
   status:
     name: "&6Server Status"
+  reload:
+    name: "&aReload Config"
+    lore: "&7Click to reload config!"
 
 #  __  __  ____  _____  _    _ _      ______  _____
 #  |  \/  |/ __ \|  __ \| |  | | |    |  ____|/ ____|
@@ -25,26 +33,22 @@ gui:
 #  |_|  |_|\____/|_____/ \____/|______|______|_____/
 op-protection:
   enabled: true
-  broadcast: "&8[&3ZenGuard&8] &7Player &3%player% &7has been banned, due to Security Alert (OP-Protection)"
+  broadcast: "&8[&3ZenGuard&8] &7Player &3%player% &7has been banned, due to Account Security Alert (OP-Protection)"
   #Command executed after op-protection module triggered
   command: "ban %player% &8[&3ZenGuard&8] &7Account Security Alert"
   #List of trusted users, with OP
   list:
-    - "PolskiStevek"
+    - "xThunderek"
+command-protection:
+  enabled: true
+  broadcast: "&8[&3ZenGuard&8] &7Player &3%player% &7has been banned, due to Server Security Alert (Command-Protection)"
+  #Command executed after op-protection module triggered
+  command: "ban %player% &8[&3ZenGuard&8] &7Account Security Alert"
+  list:
+    - "//br"
 player-log:
   enabled: true
-  #Log commands and more
-  event-log: true
   save-ip: true
-  #Commands not logged in player-log
-  exclude-commands:
-    - /execute
-    - /test
-  log-messages:
-    join: "Joined the server."
-    quit: "Left the server."
-    command: "Issued command: %cmd%."
-    chat: "Send message: %msg%."
 
 #  __  __ _____  _____  _____
 #  |  \/  |_   _|/ ____|/ ____|
@@ -55,3 +59,5 @@ player-log:
 #Stats displayed in GUI
 stats:
   op-protection: 0
+
+data:

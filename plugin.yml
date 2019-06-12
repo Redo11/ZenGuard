@@ -1,7 +1,7 @@
 name: ZenGuard
 main: ru.ruscode.zenguard.Main
-version: 1.0
-author: PolskiStevek
+version: 1.1
+authors: [xThunderek, 0xygenOfficial]
 website: https://youtube.com/MrDiamondPL
 
 commands:
