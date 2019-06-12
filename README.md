@@ -11,6 +11,6 @@ Better Server Protection.
 * Custom GUI
 
 # Screenshots
-https://i.imgur.com/7Lryvcu.png
+![Alt Text](https://i.imgur.com/7Lryvcu.png)
 
-https://i.imgur.com/M4qeVK9.png
+![Alt Text](https://i.imgur.com/M4qeVK9.png)
