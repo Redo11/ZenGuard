@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZenGuard.iml" filepath="$PROJECT_DIR$/ZenGuard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZenGuard-v1/ZenGuard-v1.iml" filepath="$PROJECT_DIR$/ZenGuard-v1/ZenGuard-v1.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,11 @@
+name: ZenGuard
+main: pl.xthunderek.zenguard.basic.ZenGuard
+version: 1.2
+authors: [xThunderek, 0xygenOfficial]
+website: https://youtube.com/MrDiamondPL
+softdepend: [AuthMe]
+api-version: 1.13
+
+commands:
+  zenguard:
+    description: Main command.

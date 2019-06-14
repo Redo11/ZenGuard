@@ -1,7 +1,6 @@
-package ru.ruscode.zenguard.utils;
+package pl.xthunderek.zenguard.utils;
 
 import org.bukkit.enchantments.*;
-import org.bukkit.potion.*;
 import org.bukkit.inventory.*;
 import org.bukkit.*;
 import org.bukkit.inventory.meta.*;
@@ -16,7 +15,6 @@ public class ItemBuilder
     private final List<String> lore;
     private final HashMap<Enchantment, Integer> enchants;
     private Color color;
-    private Potion potion;
 
     public ItemBuilder(final Material mat) {
         this(mat, 1);
@@ -88,9 +86,6 @@ public class ItemBuilder
         }
         item.setItemMeta(meta);
         item.addUnsafeEnchantments((Map)this.enchants);
-        if (this.potion != null) {
-            this.potion.apply(item);
-        }
         return item;
     }
 
@@ -104,7 +99,6 @@ public class ItemBuilder
             newBuilder.addEnchantment(entry.getKey(), entry.getValue());
         }
         newBuilder.setColor(this.color);
-        newBuilder.potion = this.potion;
         return newBuilder;
     }
 

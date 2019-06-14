@@ -1,4 +1,4 @@
-package ru.ruscode.zenguard.utils;
+package pl.xthunderek.zenguard.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -21,7 +21,7 @@ public class ChatUtil {
 
     public static String getTime(){
         final Calendar cal = Calendar.getInstance();
-        final SimpleDateFormat sdf = new SimpleDateFormat(ConfigUtils.getString("general.date-format"));
+        final SimpleDateFormat sdf = new SimpleDateFormat(Config.getString("general.date-format"));
         final String time = sdf.format(cal.getTime());
         return time;
     }

@@ -19,11 +19,15 @@ messages:
 gui:
   actions:
     name: "&cExecuted Actions"
-  status:
-    name: "&6Server Status"
+  trusted:
+    name: "&6Trusted Players"
   reload:
     name: "&aReload Config"
     lore: "&7Click to reload config!"
+  hooks:
+    name: "&9Hooks"
+hooks:
+  authme: true
 
 #  __  __  ____  _____  _    _ _      ______  _____
 #  |  \/  |/ __ \|  __ \| |  | | |    |  ____|/ ____|
@@ -59,5 +63,5 @@ player-log:
 #Stats displayed in GUI
 stats:
   op-protection: 0
-
+  command-protection: 0
 data:

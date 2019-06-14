@@ -3,8 +3,8 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ZenGuard_jar</output-path>
     <root id="archive" name="ZenGuard.jar">
       <element id="module-output" name="ZenGuard" />
-      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
-      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/ZenGuard-v1/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/ZenGuard-v1/src/main/resources/plugin.yml" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
